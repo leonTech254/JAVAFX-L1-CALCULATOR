@@ -1,0 +1,22 @@
+/* styles.css */
+.hello {
+    -fx-background-color: #CCC;
+}
+.buttons-Wrapper
+{
+-fx-padding:10
+-fx-display:grid
+}
+/* styles.css */
+.calculator-grid {
+    -fx-padding: 10;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.calc-button {
+    -fx-min-width: 50px;
+    -fx-min-height: 50px;
+    -fx-font-size: 18px;
+}
+

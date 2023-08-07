@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.leonteqsecurity.calculator.CalculatorController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox>
+        <TextField minHeight="50.0" editable="false" styleClass="hello"/>
+    </VBox>
+    <HBox styleClass="buttons-Wrapper" alignment="CENTER">
+<GridPane styleClass="calculator-grid">
+    <Button styleClass="calc-button" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="3" GridPane.columnIndex="2" GridPane.rowIndex="0"  onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="7" GridPane.columnIndex="0" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#buttonClicked"/>
+    <Button styleClass="calc-button" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#buttonClicked"/>
+</GridPane>
+
+
+    </HBox>
+
+
+
+</VBox>
