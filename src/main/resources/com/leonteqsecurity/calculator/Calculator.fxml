@@ -11,7 +11,7 @@
             fx:controller="com.leonteqsecurity.calculator.CalculatorController"
             prefHeight="400.0" prefWidth="600.0">
     <VBox>
-        <TextField minHeight="50.0" editable="false" styleClass="hello"/>
+        <TextField minHeight="50.0" editable="false" styleClass="hello" fx:id="ResultScreen"/>
     </VBox>
     <HBox styleClass="buttons-Wrapper" >
 <GridPane styleClass="calculator-grid">
@@ -26,12 +26,12 @@
     <Button styleClass="calc-button" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#buttonClicked"/>
     <Button styleClass="calc-button" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#buttonClicked"/>
 </GridPane>
-        <VBox styleClass="symbols-Container">
+        <VBox styleClass="symbols-Container" spacing="2">
             <Button styleClass="calc-button" text="+" onAction="#clickOperator"/>
             <Button styleClass="calc-button" text="-" onAction="#clickOperator"/>
             <Button styleClass="calc-button" text="*" onAction="#clickOperator"/>
             <Button styleClass="calc-button" text="/" onAction="#clickOperator"/>
-            <Button styleClass="calc-button equal" text="=" onAction="#equal"/>
+            <Button styleClass="calc-button" text="=" onAction="#equal"/>
         </VBox>
 
 

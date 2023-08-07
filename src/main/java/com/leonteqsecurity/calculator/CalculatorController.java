@@ -3,6 +3,7 @@ package com.leonteqsecurity.calculator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +15,9 @@ public class CalculatorController {
     private  int finalResults;
 
     private List<String> AllData=new ArrayList<>();
+
+    @FXML
+    private TextField ResultScreen;
 
     @FXML
     public  void  buttonClicked(ActionEvent event)
@@ -82,6 +86,7 @@ System.out.println(allData);
         }
 
         System.out.println(result);
+        ResultScreen.setText(String.valueOf(result));
         return result;
     }
 
