@@ -13,7 +13,7 @@
     <VBox>
         <TextField minHeight="50.0" editable="false" styleClass="hello"/>
     </VBox>
-    <HBox styleClass="buttons-Wrapper" alignment="CENTER">
+    <HBox styleClass="buttons-Wrapper" >
 <GridPane styleClass="calculator-grid">
     <Button styleClass="calc-button" text="1" GridPane.columnIndex="0" GridPane.rowIndex="0" onAction="#buttonClicked"/>
     <Button styleClass="calc-button" text="2" GridPane.columnIndex="1" GridPane.rowIndex="0" onAction="#buttonClicked"/>
@@ -26,9 +26,18 @@
     <Button styleClass="calc-button" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" onAction="#buttonClicked"/>
     <Button styleClass="calc-button" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" onAction="#buttonClicked"/>
 </GridPane>
+        <VBox styleClass="symbols-Container">
+            <Button styleClass="calc-button" text="+" onAction="#clickOperator"/>
+            <Button styleClass="calc-button" text="-" onAction="#clickOperator"/>
+            <Button styleClass="calc-button" text="*" onAction="#clickOperator"/>
+            <Button styleClass="calc-button" text="/" onAction="#clickOperator"/>
+            <Button styleClass="calc-button equal" text="=" onAction="#equal"/>
+        </VBox>
 
 
     </HBox>
+
+
 
 
 

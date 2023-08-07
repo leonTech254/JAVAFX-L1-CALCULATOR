@@ -1,4 +1,3 @@
-/* styles.css */
 .hello {
     -fx-background-color: #CCC;
 }
@@ -7,8 +6,7 @@
 -fx-padding:10
 -fx-display:grid
 }
-/* styles.css */
-.calculator-grid {
+.calculator-grid,symbols-Container {
     -fx-padding: 10;
     -fx-hgap: 10;
     -fx-vgap: 10;
