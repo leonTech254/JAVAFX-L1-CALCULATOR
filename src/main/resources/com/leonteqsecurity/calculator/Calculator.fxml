@@ -10,8 +10,9 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.leonteqsecurity.calculator.CalculatorController"
             prefHeight="400.0" prefWidth="600.0">
-    <VBox>
-        <TextField minHeight="50.0" editable="false" styleClass="hello" fx:id="ResultScreen"/>
+    <VBox minHeight="50.0" styleClass="hello">
+        <TextField editable="false" fx:id="workingScreen"/>
+        <TextField  editable="false"  fx:id="ResultScreen"/>
     </VBox>
     <HBox styleClass="buttons-Wrapper" >
 <GridPane styleClass="calculator-grid">

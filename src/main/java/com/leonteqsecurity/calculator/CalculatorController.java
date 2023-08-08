@@ -14,6 +14,10 @@ public class CalculatorController {
     private  String currentOperation;
     private  int finalResults;
 
+    private  String workingScreenShow="";
+    @FXML
+    private  TextField workingScreen;
+
     private List<String> AllData=new ArrayList<>();
 
     @FXML
@@ -25,14 +29,22 @@ public class CalculatorController {
         Button buttonclicked =(Button) event.getSource();
 //        converting text to integer
         String stringNumber=buttonclicked.getText();
+
 //        int number =Integer.parseInt(stringNumber);
         if(currentNumberString.isEmpty())
         {
             currentNumberString=stringNumber;
+            displayWorking(stringNumber);
+            workingScreenShow=currentNumberString;
+
+
 
         }else
         {
             currentNumberString=currentNumberString+stringNumber;
+            workingScreenShow=workingScreenShow+currentNumberString;
+            displayWorking(stringNumber);
+
 
         }
 
@@ -40,11 +52,20 @@ public class CalculatorController {
 
 
     }
+    private  void displayWorking(String value)
+    {
+        String currentDisplayText=workingScreen.getText();
+        workingScreen.setText(currentDisplayText+value);
+    }
     public  void clickOperator(ActionEvent event)
     {
+
         Button buttonclicked =(Button) event.getSource();
 //        converting text to integer
         String operator=buttonclicked.getText();
+        displayWorking(operator);
+        workingScreenShow=workingScreenShow+operator;
+
         currentOperation= operator;
 //        System.out.println(currentOperation);
         AllData.add(currentNumberString);
